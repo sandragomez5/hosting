@@ -8,3 +8,34 @@ h1 {
   tamaño de fuente : 60 px ;
   alinear texto : centro ;
 }
+
+p , li {
+  tamaño de fuente : 16 px ;
+  altura de línea : 2 ;
+  espacio entre letras : 1 px ;
+}
+
+
+html {
+  color de fondo : # 00539F ;
+}
+
+cuerpo {
+  ancho : 600 px ;
+  margen : 0  automático ;
+  color de fondo : # FF9500 ;
+  relleno : 0  20 px  20 px  20 px ;
+  borde : 5 px  negro sólido  ;
+}
+
+h1 {
+  margen : 0 ;
+  relleno : 20 px  0 ;
+  color : # 00539F ;
+  sombra de texto : 3 px  3 px  1 px  negro ;
+}
+
+img {
+  pantalla : bloque ;
+  margen : 0  automático ;
+}
