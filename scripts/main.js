@@ -1,21 +1,21 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Derivado de "Desafío: pasarela"</title>
-        <style>
+< html >
+    < head >
+        < meta charset="utf-8" >
+        < title >Derivado de "Desafío: pasarela"</title>
+        < style >
             #cat {
                 position: absolute;
                 left: 0px;
             }
-        </style>
-    </head>
-    <body>
-    <div>
-        <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
-        <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
-    </div>
+        </ style >
+    </ head >
+    < body >
+    < div >
+        < !-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -- >
+        < img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif" >
+    </ div >
     
-  <script>
+  < script >
   var catEl = document.getElementById("cat");
   
   var startTime = new Date().getTime();
@@ -31,7 +31,7 @@
   };
   
   walkTheCat();
-  </script>
+  </ script >
 
-    </body>
-</html>
+    </ body >
+</ html >
