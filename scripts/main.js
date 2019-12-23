@@ -5,7 +5,7 @@
         < style >
             #cat {
                 position: absolute;
-                left: 0px;
+                left: 10 px;
             }
         </ style >
     </ head >
