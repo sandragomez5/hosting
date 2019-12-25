@@ -1,37 +1,54 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title >Derivado de "Desafío: pasarela"</title>
-        <style>
-            #cat {
-                position: absolute;
-                left: 10 px;
-            }
-        </style>
-    </head>
-    <body>
-    <div>
-        <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
-        <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
-    </ div >
-    
-  <script>
-  var catEl = document.getElementById("cat");
-  
-  var startTime = new Date().getTime();
-  var walkTheCat = function() {
-      var currTime = new Date().getTime();
-      var secondsElapsed = ((currTime - startTime)/1000);
-      
-      var newLeft = (50 + ((currTime - startTime)/1000)*30);
-      catEl.style.left= newLeft + "px";
-      if (newLeft<3000) {
-          window.requestAnimationFrame(walkTheCat);
-      }
-  };
-  
-  walkTheCat();
-  </script>
+// Image switcher code
 
-    </body>
-</html>
+let myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+  let mySrc = myImage.getAttribute('src');
+  if(mySrc === 'images/wooden-spoon-4546584_960_720.png.png') {
+    myImage.setAttribute ('src','images/tortilla-622974_960_720.png');
+  } else {
+    myImage.setAttribute ('src','images/wooden-spoon-4546584_960_720.png.png');
+  }
+}
+
+// Personalized welcome message code
+
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+
+function setUserName() {
+  let myName = prompt('Inserta tu apodo. El que más te guste. ;-)');
+  if(!myName || myName === null) {
+    
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Bienvenido a MiVä´s World, ' + myName + '. ¡Disfruta!';
+  }
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Bienvenido a MiVä´s World, ' + storedName + '. ¡Disfruta!';
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
+
+// El gato desplazándose <3
+var catEl = document.getElementById("cat");
+
+var startTime = new Date().getTime();    
+var walkTheCat = function(){
+    var currTime = new Date().getTime();
+    var newLeft = ((currTime - startTime) / 1000) * 100;
+    var newTop = 0//((currTime - startTime) / 1000) * 100;
+    if (newLeft > 850){ startTime = currTime};
+    console.log(newLeft);
+    catEl.style.left = newLeft + "px";
+    catEl.style.top = newTop + "px";
+    window.requestAnimationFrame(walkTheCat);
+};
+walkTheCat();
