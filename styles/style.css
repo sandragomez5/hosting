@@ -7,6 +7,10 @@ html {
 h1 {
   font-size:70px;
   text-align: center;
+  font-family: 'Girassol', cursive;
+  color: rgb(200,200,200);
+}
+
 }
 
 h2 {
