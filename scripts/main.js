@@ -4,10 +4,10 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
-  if(mySrc === 'images/cookies.png') {
-    myImage.setAttribute ('src','images/ingredients.png');
-  } else {
+  if(mySrc === 'images/ingredients.png') {
     myImage.setAttribute ('src','images/cookies.png');
+  } else {
+    myImage.setAttribute ('src','images/ingredients.png');
   }
 }
 
