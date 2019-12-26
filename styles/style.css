@@ -15,6 +15,12 @@ h1 {
   font-family: 'Girassol', cursive;
   color: rgb(72, 218, 60);
 }
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  border: 2px solid black;
+}
 
 p, li {
   font-size: 15px;
