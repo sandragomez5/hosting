@@ -47,7 +47,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Hola! ' + storedName + ',preparad@ para cocinar?';
+  myHeading.innerHTML = 'Hola!... ' + storedName + '...preparad@ para cocinar?';
 }
 
 myButton.onclick = function() {
